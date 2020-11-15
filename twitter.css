@@ -1,0 +1,73 @@
+
+body {
+  margin: auto;
+  height: 100%;
+}
+
+.error_message {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  float: right;
+  background-color: yellow;
+  display: none;
+}
+
+.background {
+  padding-top: 100px;
+  height: 100%;
+  background-color: blue;
+  margin: auto;
+  width: 75%;
+}
+
+.header {
+  width: 60%;
+  margin: auto;
+  background-color: black;
+}
+
+.feed {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  width: 60%;
+  margin: auto;
+  background-color: black;
+
+}
+
+.send_button {
+  height: 50px;
+  background-color: green;
+  float: right;
+  width: 30%;
+  text-align: center;
+}
+
+.message_input {
+  resize: none;
+  height: 44px;
+  /* ^Adds 6 pixels for no reason, should be 50 pixels*/
+  background-color: red;
+  width: 60%;
+}
+
+.message{
+  padding-top: 10px;
+  background-color: green;
+
+}
+
+.unmarked_tweet{
+  border: 1px solid;
+  padding: 5px;
+  background-color: #4477b2;
+}
+
+.marked_tweet{
+  border: 1px solid;
+  padding:1px;
+  color: rgba(0, 0, 0, 0.1);
+  background-color:#aec5e0;
+}
