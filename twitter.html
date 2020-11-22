@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="twitter.css">
+    <meta charset="utf-8">
+    <title>Twitter</title>
+  </head>
+
+  <body>
+    <div class = "background">
+      <div id = "error_message" class = "error_message"></div>
+      <div class = "header">
+        <textarea id = "input" class = "message_input" placeholder="Textfält"></textarea>
+        <button id = "send_button" onclick = "get_input()" class = "send_button">
+          Publish
+        </button>
+
+      </div>
+      <div class = "feed" id = "feed">
+      </div>
+    </div>
+
+    <script>
+      var tweet_id = 0;
+
+      function get_input() {
+        var text = document.getElementById('input').value;
+        var error = document.getElementById('error_message');
+        if (text.length > 140) {
+          var diff = text.length - 140;
+
+          error.innerHTML = `Tweet exceeds 140 characters and is therefore not published. Length exceeded by ${diff} characters.`;
+          error.style.display = "block";
+        }
+        else if (text.length < 1) {
+          error.innerHTML = 'You can not publish an empty tweet';
+          error.style.display = "block";
+        }
+        else {
+          error.style.display = "none";
+          publish_tweet(text);
+        }
+
+      }
+
+      function publish_tweet(text) {
+        tweet_id += 1;
+        var new_div = document.createElement("div");
+        var tweet = document.createTextNode(text);
+        new_div.appendChild(tweet);
+        new_div.className = "unmarked_tweet";
+        new_div.setAttribute("id", `${tweet_id}`);
+
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.className = "checkbox";
+        checkbox.setAttribute("id", `checkbox_${tweet_id}`);
+        checkbox.onclick = function(){
+          mark_tweet(checkbox.id);
+        }
+        new_div.appendChild(checkbox);
+        var current_div = document.getElementById("feed");
+
+        current_div.insertBefore(new_div, document.getElementById(`${tweet_id-1}`));
+      }
+
+      function mark_tweet(checkbox_id){
+        var div_id = checkbox_id.replace('checkbox_', '');
+        var current_div = document.getElementById(div_id);
+        if (document.getElementById(checkbox_id).checked == true) {
+          current_div.className = "marked_tweet";
+        }
+        else
+        {
+          current_div.className = "unmarked_tweet";
+        }
+
+      }
+
+    </script>
+  </body>
+</html>

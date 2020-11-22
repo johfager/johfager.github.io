@@ -1,0 +1,82 @@
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgxMzUpICI+PHJlY3QgaWQ9InBhdHRlcm4tYmFja2dyb3VuZCIgd2lkdGg9IjQwMCUiIGhlaWdodD0iNDAwJSIgZmlsbD0icmdiYSgyMDUsIDE1OCwgMjksMC40NikiPjwvcmVjdD4gPHBhdGggZmlsbD0icmdiYSgxMTQsIDEyOCwgMTYxLDAuNDYpIiBkPSIKICAgICAgICAgICAgICAgIE0wIDI5IGEgOSAtOSAwIDAgMCA5IC05IGEgMTEgLTExIDAgMCAxIDExIC0xMSB2MiBhIC05IDkgMCAwIDAgLTkgOSBhIC0xMSAxMSAwIDAgMSAtMTEgMTF6CiAgICAgICAgICAgICAgICBNMCA2OSBhIDkgLTkgMCAwIDAgOSAtOSBhIDExIC0xMSAwIDAgMSAxMSAtMTEgdjIgYSAtOSA5IDAgMCAwIC05IDkgYSAtMTEgMTEgMCAwIDEgLTExIDExegogICAgICAgICAgICAgICI+PC9wYXRoPjxwYXRoIGZpbGw9InJnYmEoMTg3LCAxNjUsIDE4MCwxKSIgZD0iTTIwIDI5LjUgYSA5LjUgLTkuNSAwIDAgMCA5LjUgLTkuNSBhIDEwLjUgLTEwLjUgMCAwIDEgMTAuNSAtMTAuNSB2MSBhIC05LjUgOS41IDAgMCAwIC05LjUgOS41IGEgLTEwLjUgMTAuNSAwIDAgMSAtMTAuNSAxMC41eiI+PC9wYXRoPjwvcGF0dGVybj4gIDwvZGVmcz4gPHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSI+PC9yZWN0Pjwvc3ZnPg==");    /* background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjgxIiBoZWlnaHQ9IjgxIiB2aWV3Qm94PSIwIDAgNDAsNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgwKSAiPjxyZWN0IGlkPSJwYXR0ZXJuLWJhY2tncm91bmQiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbGw9InJnYmEoNDIsIDQ4LCA2MywxKSI+PC9yZWN0PiA8cGF0aCBmaWxsPSJyZ2JhKDc2LCAxNzUsIDgwLDEpIiBkPSJNMjAgNSBhIDIwIDIwIDAgMCAxIDQwIDAgaDEwIGEgMTAgMTAgMCAwIDEgLTIwIDAgYSAxMCAxMCAwIDAgMCAtMjAgMCBhIDEwIDEwIDAgMCAxIC0yMCAwIGEgMTAgMTAgMCAwIDAgLTIwIDAgaC0xMCBhIDIwIDIwIDAgMCAxIDQwIDAgeiI+PC9wYXRoPjxwYXRoIGZpbGw9InJnYmEoMTE4LCAxNzksIDE4MywxKSIgZD0iTTAgMjUgYSAyMCAyMCAwIDAgMSA0MCAwIGgxMCBhIDEwIDEwIDAgMCAxIC0yMCAwIGEgMTAgMTAgMCAwIDAgLTIwIDAgYSAxMCAxMCAwIDAgMSAtMjAgMCB6Ij48L3BhdGg+PHBhdGggZmlsbD0icmdiYSg3NiwgMTc1LCA4MCwxKSIgZD0iTTIwIDQ1IGEgMjAgMjAgMCAwIDEgNDAgMCBoMTAgYSAxMCAxMCAwIDAgMSAtMjAgMCBhIDEwIDEwIDAgMCAwIC0yMCAwIGEgMTAgMTAgMCAwIDEgLTIwIDAgYSAxMCAxMCAwIDAgMCAtMjAgMCBoLTEwIGEgMjAgMjAgMCAwIDEgNDAgMCB6Ij48L3BhdGg+PC9wYXR0ZXJuPiAgPC9kZWZzPiA8cmVjdCBmaWxsPSJ1cmwoI3BhdHRlcm4pIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIj48L3JlY3Q+PC9zdmc+");    background-color: #32423C; */
+    /* background-color: #E3C84B; */
+    word-spacing: 0.2em;
+}
+.wrapper
+{   
+    /* font-family: "Helvetica"; */
+    /* background-color: white; */
+    /* background-color:#D3DFF7; */
+    /* background-size: cover; */
+    /* display: flex;*/
+     flex-wrap: wrap; 
+    /* font-family: 'Montserrat', sans-serif; */
+    /* height: 100vh;
+    max-height: 100vh; */
+    overflow: hidden;
+    padding: 3.2rem; 
+    position: relative;
+    /* width: 100%; */
+}  
+header {
+    /* float:left; */
+    margin: 2.2rem;
+    font-family: "Helvetica";
+    display: inline;
+    /* background: #00b292; */
+    border-radius: .8rem;
+    /* color: #fff; */
+    /* height: 100%; */
+    min-height: 240px;
+    padding: 3.2rem;
+    /* position: relative; */
+    /* width: 33.33333334%; */
+    /* border-radius: .8rem; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    max-width: 400px;
+}
+.frontPageButton{
+    margin: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding:1%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: black; 
+  border: 2px solid black;
+    border-radius: 50px; 
+    background-color: white; 
+    color: black; 
+
+}
+
+.frontPageButton:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+    
+.gobackdiv{
+    margin:5%;
+    position: absolute;
+    border: white 4px;
+    top: 0;
+    left: 0;
+    max-width: 250px;
+    height: 200px;
+    float:left;
+    
+
+}
+/* section{ */
+    /* float: left; */
+    /* white-space: pre-line; */
+    /* color: red; */
+/* } */

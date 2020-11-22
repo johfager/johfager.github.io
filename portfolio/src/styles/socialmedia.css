@@ -1,0 +1,19 @@
+.socialmedia{
+    width:100%;
+    padding: 1em;
+    margin: 5%;
+    float:right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.icons{
+    /* padding-left: 5%;*/
+    margin-left:12%; 
+     /* margin: 5%; */
+    /* float:right; */
+    /* float:center; */
+}
+a:hover {
+    border-bottom: red;
+}
