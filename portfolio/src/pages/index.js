@@ -15,10 +15,6 @@ const IndexPage = () => (
     <ProjectCard title="CatBook"></ProjectCard>
     <ProjectCard title="CodEng"></ProjectCard>
 
-
-    {/* </section> */}
-  {/* </header> */}
-  {/* </Layout> */}
   </div>
 )
 

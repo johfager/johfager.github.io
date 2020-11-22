@@ -14,16 +14,12 @@ import FrontPageButton from "../components/frontpagebutton"
 import ProjectGoBack from "../components/projectgoback"
 import {Button} from "react-bootstrap"
 const CodEngPage = () => (
-  // <Layout>
-//   <div className="wrapper">
+
 <div>
     <ProjectGoBack title="CodEng"></ProjectGoBack>
     <div className="projectdesc">
     <article>
-        {/* <div> */}
-    {/* <h1>
-    CodEng
-    </h1> */}
+
     <div className="abstract">
     Created a new programming language 
     with Ruby.    
@@ -40,21 +36,9 @@ const CodEngPage = () => (
     Below is a simple example of our language compared to Python.
     </div>
 
-{/* 
-    <div className="img" style={{ maxWidth: '300px'}}>
-        {/* <ProfileImage></ProfileImage> */}
-        {/* <CodEngExample></CodEngExample> */}
-        {/* <CodEngPython></CodEngPython> */}
-    {/* </div> */}
     <div className="projectimage" style={{ maxWidth: '1000px'}}>
-        {/* <ProfileImage></ProfileImage> */}
         <CodEngExample></CodEngExample>
-        {/* <CodEngPython></CodEngPython> */}
     </div>
-
-    {/* <div className="img" style={{ maxWidth: '300px'}}>
-    <ProfileImage />
-    </div> */}
     </article>
     </div>
     </div>

@@ -14,16 +14,12 @@ import FrontPageButton from "../components/frontpagebutton"
 import ProjectGoBack from "../components/projectgoback"
 
 const PortfolioPage = () => (
-  // <Layout>
-//   <div className="wrapper">
+
 <div>
     <ProjectGoBack title="Portfolio"></ProjectGoBack>
     <div className="projectdesc">
     <article>
-        {/* <div> */}
-    {/* <h1>
-    CodEng
-    </h1> */}
+
     <div className="abstract">
     Portfolio created as a Single Page Application.      
     </div>
@@ -37,18 +33,6 @@ const PortfolioPage = () => (
     It becomes much easier to dynamically create buttons, project pages and other 
     types of contents.
     </div>
-
-{/* 
-    <div className="img" style={{ maxWidth: '300px'}}>
-        {/* <ProfileImage></ProfileImage> */}
-        {/* <CodEngExample></CodEngExample> */}
-        {/* <CodEngPython></CodEngPython> */}
-    {/* </div> */}
-
-
-    {/* <div className="img" style={{ maxWidth: '300px'}}>
-    <ProfileImage />
-    </div> */}
     </article>
     </div>
     </div>

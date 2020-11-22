@@ -14,16 +14,12 @@ import ProjectGoBack from "../components/projectgoback"
 import ReactPlayer from 'react-player'
 
 const CatBookPage = () => (
-  // <Layout>
-//   <div className="wrapper">
+
 <div>
     <ProjectGoBack title="CatBook"></ProjectGoBack>
     <div className="projectdesc">
     <article>
-        {/* <div> */}
-    {/* <h1>
-    CodEng
-    </h1> */}
+
     <div className="abstract">
     Social Media Application for Tigers, Lions, Cats and other felines.    
     </div>
@@ -46,16 +42,6 @@ const CatBookPage = () => (
     />
     </div>
 
-{/* 
-    <div className="img" style={{ maxWidth: '300px'}}>
-        {/* <ProfileImage></ProfileImage> */}
-        {/* <CodEngExample></CodEngExample> */}
-        {/* <CodEngPython></CodEngPython> */}
-    {/* </div> */}
-
-    {/* <div className="img" style={{ maxWidth: '300px'}}>
-    <ProfileImage />
-    </div> */}
     </article>
     </div>
     </div>

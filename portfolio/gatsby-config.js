@@ -7,7 +7,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
-    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
