@@ -1,0 +1,74 @@
+.projectcard {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoother transition for hover effects */
+}
+
+.projectcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.projectcard-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease; /* Smoother transition for blur and darken */
+}
+
+.projectcard:hover .projectcard-thumbnail {
+  background-color: #f0f0f0; /* Placeholder color */
+  filter: blur(15px) brightness(0.006); /* Blur and darken the image */
+}
+
+.projectcard-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  opacity: 0; /* Hide the title by default */
+  transition: opacity 0.3s ease; /* Smoother transition for showing the title */
+}
+
+.projectcard:hover .projectcard-info {
+  opacity: 1; /* Show the title on hover */
+}
+
+
+.projectcard-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+.projectcard-no-thumbnail{
+  background-color: #f0f0f0; /* Placeholder color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #999; /* Placeholder text color */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.projectcard:hover .projectcard-no-thumbnail {
+  filter: blur(4px) brightness(0.1); /* Add a blur and darken effect on hover */
+}
